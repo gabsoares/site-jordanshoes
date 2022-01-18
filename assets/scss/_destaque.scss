@@ -1,0 +1,18 @@
+.destaque-produtos{
+    text-align: center;
+    h2{
+    font-size: 32px;
+    color: $preto;
+    margin: 60px 0 40px 0;
+    @include device(small){
+        font-size: 24px;
+    }
+    }
+    p{
+        color: #474747;
+        font-size: 18px;
+        @include device(small){
+            font-size: 15px;
+        }
+    }
+}

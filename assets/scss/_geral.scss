@@ -1,0 +1,46 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Variáveis
+$preto: #181818;
+$preto-destaque: #474747;
+$branco-header: #F9F9F9;
+$background-tenis: #EBE9EA;
+$altura-header: 60px;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+//Mixin
+$l: 1200px;
+$m: 600px;
+$s: 200px; 
+
+//Mixin Media Queries
+@mixin device($size){
+    @if $size == large{
+        @media screen and (min-width: $l){
+            @content;
+        }
+    }
+    @else if $size == medium{
+        @media screen and (min-width: 791px) and (max-width: 1199px){
+            @content;
+        }
+    }
+    @else if $size == smaller{
+        @media screen and (min-width: 600px) and (max-width: 790px){
+            @content;
+        }
+    }
+    @else if $size == small{
+        @media screen and (min-width: $s) and (max-width: 599px){
+            @content;
+        }
+    }
+}
+
+.typed-cursor{
+    display: none;
+}

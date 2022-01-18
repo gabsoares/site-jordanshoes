@@ -1,0 +1,38 @@
+.produtos-gerais{
+    width: 90%;
+    margin: 60px auto;
+    @include device(small){
+        width: 90%
+    }
+    @include device(medium){
+        width: 90%
+    }
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include device(small){
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            padding: 60px 25px 60px 25px;
+            width: 18%;
+            background: $background-tenis;
+            margin: 0 0 40px 15px;
+            @include device(small){
+                width: 100%;
+                padding: 0;
+                margin: 30px 0 30px 0;
+            }
+            @include device(smaller){
+                width: 35%;
+                margin: 30px 0 30px 20px;
+            }
+            @include device(medium){
+                width: 39%;
+                margin: 30px 0 30px 20px;
+            }
+        }
+    }
+}

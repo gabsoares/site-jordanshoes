@@ -1,0 +1,41 @@
+.intro-site{
+    background: rgba(0,0,0,.5) url('../img/wallpaper.jpeg') no-repeat center;
+    min-height: 460px;
+    background-blend-mode: color;
+    background-attachment: fixed;
+    background-size: cover;
+    .intro-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 460px;
+        width: 50%;
+        margin-left: 100px;
+        @include device(small){
+            width: 90%;
+            margin-left: 10px;
+            text-align: center;
+        }
+        h2{
+            color: $branco-header;
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 20px;
+            width: fit-content;
+            @include device(small){
+                font-size: 20px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .intro-p{
+            color: $branco-header;
+            font-size: 18px;
+            line-height: 35px;
+            @include device(small){
+                font-size: 16px;
+            }
+        }
+    }
+}
+

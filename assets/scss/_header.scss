@@ -1,0 +1,21 @@
+.header{
+    p{
+        background: $preto;
+        color: $branco-header;
+    }
+    h1{
+        font-size: 24px;
+        color: $preto;
+        background: $branco-header;
+        font-weight: 600;
+        @include device(small){
+            font-size: 20px;
+        }
+    }
+    p, h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+}

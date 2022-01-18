@@ -1,0 +1,13 @@
+.footer{
+    background: $preto;
+    color: $branco-header;
+    height: $altura-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    @include device(small){
+        text-align: center;
+        font-size: 15px;
+    }
+}
